@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+      "dsznajder.es7-react-js-snippets",
+      "xabikos.javascriptsnippets",
+      "styled-components.vscode-styled-components",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "firsttris.vscode-jest-runner",
+      "eamodio.gitlens",
+      "github.vscode-pull-request-github"
+    ]
+  }

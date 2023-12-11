@@ -1,11 +1,11 @@
 import React from "react";
 
-function HomePage() {
+function Pricing() {
   return (
     <div>
-      Home Page
+      Pricing Page
     </div>
   );
 }
 
-export default HomePage;
+export default Pricing;

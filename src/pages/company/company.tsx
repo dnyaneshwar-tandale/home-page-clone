@@ -1,11 +1,11 @@
 import React from "react";
 
-function HomePage() {
+function Company() {
   return (
     <div>
-      Home Page
+      Company Page
     </div>
   );
 }
 
-export default HomePage;
+export default Company;

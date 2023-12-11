@@ -1,7 +1,8 @@
+@import '../../style/theme-colors.scss';
 /*Desktop View*/
 .header {
   display: flex;
-  background: transparent;
+  background:  $purple;
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
@@ -25,7 +26,7 @@
 .nav-options {
   padding-left: 25px;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 50px;
   list-style-type: none;
 }

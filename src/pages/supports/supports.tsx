@@ -1,11 +1,11 @@
 import React from "react";
 
-function HomePage() {
+function Supports() {
   return (
     <div>
-      HomePage Page
+      Supports Page
     </div>
   );
 }
 
-export default HomePage;
+export default Supports;

@@ -1,10 +1,10 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 const NavBar = React.lazy(() => import("../../component/nav-bar/nav-bar"));
-const HomePage = React.lazy(() => import("../downloads/downloads"));
+const HomePage = React.lazy(() => import("../home/home"));
 const About = React.lazy(() => import("../about/about"));
 const Pricing = React.lazy(() => import("../pricing/pricing"));
-const Downloads = React.lazy(() => import("../home/home"));
+const Downloads = React.lazy(() => import("../downloads/downloads"));
 const Company = React.lazy(() => import("../company/company"));
 const Supports = React.lazy(() => import("../supports/supports"));
 

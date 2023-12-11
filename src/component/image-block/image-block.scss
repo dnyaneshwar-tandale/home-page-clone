@@ -1,0 +1,118 @@
+
+
+  .imageContainer {
+    display: flex;
+    height: 100%;
+    padding: 20px 20px;
+    flex-direction: column;
+    color: white;
+    .imageWrapper {
+      width: 50%;
+      flex: 1;
+      display: flex;
+      width: inherit;
+      align-items: center;
+      justify-content: center;
+      .imageBlock {
+        height: inherit;
+        max-width: 90%;
+      }
+    }
+    .imageDerscription {
+      flex-basis: 50%;
+      display: flex;
+      align-items: baseline;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 20px;
+      .title{
+        font-size: clamp(20px,4.5vw,30px);
+        font-weight:600;
+      }
+      .description{
+        font-size: clamp(18px,4.5vw,24px);
+        line-height: 1.5;
+      }
+      .button{
+        font-size: clamp(18px,4.5vw,24px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .reverseContainer{
+    display: flex;
+    height: 100%;
+  }
+
+
+  @media screen and (min-width: 1440px){
+    .imageContainer {
+      display: flex;
+      flex-direction: row;
+      .imageWrapper {
+        width: 50%;
+        flex: 1;
+      
+        .imageBlock {
+          height: inherit;
+          max-width: 90%;
+        }
+      }
+      .imageDerscription {.button{
+        justify-content: flex-start;
+      }}
+    }
+    .reverseContainer{
+      display: flex;
+      flex-direction: row-reverse;
+      height: 100%;
+    }
+}
+  @media screen and (min-width: 990px){
+    .imageContainer {
+      display: flex;
+      flex-direction: row;
+      .imageWrapper {
+        width: 50%;
+        flex: 1;
+        .imageBlock {
+          height: inherit;
+          max-width: 90%;
+        }
+      }
+      .imageDerscription {.button{
+        justify-content: flex-start;
+      }}
+    }
+    .reverseContainer{
+      display: flex;
+      flex-direction: row-reverse;
+      height: 100%;
+    }
+}
+  @media screen and (min-width: 640px){
+    .imageContainer {
+      display: flex;
+     flex-direction: row;
+      .imageWrapper {
+        width: 50%;
+        flex: 1;
+        .imageBlock {
+          height: inherit;
+          max-width: 90%;
+        }
+      }
+      .imageDerscription {.button{
+        justify-content: flex-start;
+      }}
+    }
+    .reverseContainer{
+      display: flex;
+      flex-direction: row-reverse;
+      height: 100%;
+    }
+}

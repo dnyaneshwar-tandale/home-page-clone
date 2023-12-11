@@ -1,16 +1,27 @@
 import React from "react";
 import "./button.scss";
+import { BUTTON_SIZES, BUTTON_STATES } from "../../constants/button";
 
-const STYLES = ["btn-primary", "btn-outline"];
-
-const SIZES = ["btn-medium", "btn-large"];
-
-const Button = ({ children, type, onClick, buttonStyle, buttonSize }:{children?:any, type?:any, onClick?:any, buttonStyle?:any, buttonSize?:any}) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle)
+const Button = ({
+  children,
+  type,
+  onClick,
+  buttonStyle='btnPrimary',
+  buttonSize="btnMedium",
+}: {
+  children?: any;
+  type?: any;
+  onClick?: any;
+  buttonStyle: string;
+  buttonSize: string;
+}) => {
+  const checkButtonStyle = BUTTON_STATES[buttonStyle]
     ? buttonStyle
-    : STYLES[0];
+    : BUTTON_STATES["btnPrimary"];
 
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+  const checkButtonSize = BUTTON_SIZES[buttonSize]
+    ? buttonSize
+    : BUTTON_SIZES["btnMedium"];
 
   return (
     <button

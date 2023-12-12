@@ -8,7 +8,7 @@ function Footer() {
      <div>© 2023 ZeroTier, Inc. All rights reserved.
 </div>
      <div>
-      <ul>
+      <ul className='privacy-block'>
         <ol>Terms</ol>
         <ol>
 Privacy</ol>

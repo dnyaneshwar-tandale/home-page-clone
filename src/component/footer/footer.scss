@@ -1,0 +1,22 @@
+.footer-container{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  .privacy-block{
+    display: flex;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-container{
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}

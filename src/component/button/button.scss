@@ -1,10 +1,10 @@
 :root {
-    --primary: #3acbf7;
+    --primary: #FFB441;
   }
   
   .btn {
     padding: 8px 20px;
-    border-radius: 4px;
+    border-radius: 64px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -13,28 +13,65 @@
   
   .btn:hover {
     padding: 8px 20px;
-    color: #6568f4;
     transition: 250ms;
   }
   
   .btn-primary {
     background-color: var(--primary);
+    color: #1A1A1A;
+    border: 2px solid var(--primary);
   }
+  .btn-primary:hover {
+    padding: 8px 20px;
+    color: var(--primary);
+    transition: 250ms;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+  }
+  
   
   .btn-outline {
     background-color: transparent;
-    color: #fff;
-    border: 1px solid var(--primary);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  .btn-outline:hover {
+    color: #1A1A1A;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+  }
+
+  .btn-primary-white {
+    background-color: white;
+    color: #262626;
+    border: 2px solid white;
+  }
+  .btn-primary-white:hover {
+    padding: 8px 20px;
+    color: white;
+    transition: 250ms;
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  
+  
+  .btn-outline-white {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  .btn-outline-white:hover {
+    color: #262626;
+    border: 2px solid white;
+    background-color: white;
   }
   
   .btn-medium {
     font-size: 18px;
-    color: #fff;
   }
   
   .btn-large {
     padding: 12px 20px;
     font-size: 20px;
-    color: #fff;
   }
   

@@ -1,0 +1,58 @@
+.teamContainer {
+  display: flex;
+  height: 100%;
+  padding: 20px 20px;
+  flex-direction: column;
+  color: white;
+  background-image: linear-gradient(133deg, rgb(253, 178, 93), rgb(68, 54, 202));
+  margin-bottom: 40px;
+  border-radius: 16px;
+  column-gap: 10px;
+
+  .imageWrapper {
+    width: 10%;
+    flex: 1;
+    display: flex;
+    width: inherit;
+    align-items: flex-start;
+      justify-content: flex-start;
+    .imageBlock {
+      height: inherit;
+      max-width: 12%;
+      padding-bottom: 10px;
+    }
+  }
+  .description {
+    flex-basis: 90%;
+    font-size: clamp(18px, 4.5vw, 24px);
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .teamContainer {
+    display: flex;
+    height: 100%;
+    padding: 20px 20px;
+    color: white;
+    align-items: flex-start;
+    flex-direction: row;
+
+    .imageWrapper {
+      width: 10%;
+      flex: 1;
+      display: flex;
+      width: inherit;
+      align-items: center;
+      justify-content: center;
+      .imageBlock {
+        max-width: 50%;
+      }
+    }
+    .description {
+      flex-basis: 90%;
+      font-size: clamp(18px, 4.5vw, 24px);
+      line-height: 1.5;
+    }
+  }
+}
